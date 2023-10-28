@@ -5,7 +5,7 @@
 export default function Attribution() {
   return (
     <footer
-      className="text-brand-light-cyan px-4 py-3 text-center text-sm"
+      className="mt-16 text-center text-sm text-brand-light-cyan"
       aria-label="Site"
     >
       Challenge by{" "}

@@ -1,14 +1,15 @@
+import Block from "@/components/block";
 import Attribution from "@/components/attribution";
 
 export default function Home() {
   return (
-    <>
+    <main aria-label="content">
       <div className="container">
-        <main aria-label="content">
-          <h1>Testing</h1>
-        </main>
+        <div className="flex min-h-screen flex-col items-center justify-center">
+          <Block />
+          <Attribution />
+        </div>
       </div>
-      <Attribution />
-    </>
+    </main>
   );
 }
