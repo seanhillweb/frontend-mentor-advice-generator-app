@@ -16,6 +16,9 @@ module.exports = {
           "dark-blue": "#1f2632",
         },
       },
+      boxShadow: {
+        "3xl": "0 0 28px 0 rgb(0 0 0 / 0.5)",
+      },
     },
     container: {
       center: true,

@@ -12,16 +12,20 @@ export default function Block() {
       <span className="text-xs uppercase tracking-[0.3em] text-brand-neon-green">
         Advice #001
       </span>
-      <p className="mt-6 text-2xl leading-snug text-brand-light-cyan md:text-[28px]">
-        <span>&quot;</span>
+      <p
+        className="mt-6 text-2xl leading-snug text-brand-light-cyan md:text-[28px]"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <span>&ldquo;</span>
         It is easy to sit up and take notice, what&apos;s difficult is getting
         up and taking action.
-        <span>&quot;</span>
+        <span>&rdquo;</span>
       </p>
       <DividerMobile className="mx-auto mt-6 block md:hidden" />
       <DividerDesktop className="mx-auto mt-10 hidden md:block" />
-      <button className="absolute -bottom-8 left-0 right-0 ml-auto mr-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-neon-green hover:shadow-lg hover:shadow-brand-neon-green/25">
-        <span className="sr-only">Submit</span>
+      <button className="hover:shadow-3xl focus:shadow-3xl absolute -bottom-8 left-0 right-0 ml-auto mr-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-neon-green hover:shadow-brand-neon-green focus:shadow-brand-neon-green">
+        <span className="sr-only">Generate new advice</span>
         <DiceSvgComponent className="fill-brand-dark-blue" />
       </button>
     </div>
